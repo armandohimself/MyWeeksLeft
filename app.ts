@@ -24,3 +24,12 @@ console.log(user.name);
 user.name = "Armando Arteaga";
 
 console.log(user.name);
+
+//! Arrays
+// long way
+let hobbies: Array<string>;
+//short way
+let movies: string[];
+
+hobbies = ["Coding", "Cooking", "Working Out"];
+movies = ["Predestination", "Nosferatu", "Iron Man 2"];
