@@ -84,3 +84,15 @@ type Person = {
 };
 
 let person: Person;
+
+interface Credentials {
+  password: string;
+  email: string;
+}
+
+let cred: Credentials;
+
+cred = {
+  password: "abc",
+  email: "email@email.com",
+};
