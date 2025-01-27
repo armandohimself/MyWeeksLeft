@@ -46,3 +46,15 @@ function calculate1(a, b, calcFn) {
 }
 // now you can call it like this:
 console.log(calculate(5, 4, add));
+var person;
+var cred;
+cred = {
+    password: "abc",
+    email: "email@email.com",
+    StringOrNum: "string",
+    calcFn: function multiply(a, b) {
+        return a * b;
+    },
+};
+console.log(cred.calcFn(4, 4));
+// When would you use Interface versus type keyword?

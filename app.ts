@@ -88,6 +88,8 @@ let person: Person;
 interface Credentials {
   password: string;
   email: string;
+  StringOrNum: string | number;
+  calcFn: (a: number, b: number) => number;
 }
 
 let cred: Credentials;
@@ -95,4 +97,29 @@ let cred: Credentials;
 cred = {
   password: "abc",
   email: "email@email.com",
+  StringOrNum: "string",
+  calcFn: function multiply(a: number, b: number) {
+    return a * b;
+  },
 };
+
+console.log(cred.calcFn(4, 4));
+
+// implementing contracts
+interface UserCredentials {
+  password: string;
+  email: string;
+}
+
+class AuthCredentials implements UserCredentials {
+  email: string;
+  password: string;
+  // now the other types are optionals
+  userName: string;
+}
+
+function login(userCredentials: UserCredentials) {}
+
+// TypeScript knows that down below at least has the properties we are looking for in UserCredentials
+login(cred);
+login(new AuthCredentials());
