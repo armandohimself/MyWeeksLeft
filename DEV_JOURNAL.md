@@ -30,6 +30,7 @@
 - Started over and I'm going to use Vite to install a fresh React App. Used the commend `npm create vite@latest` to install a fresh app & ran `npm install`
 - [Vite Documentation](https://vite.dev/guide/)
 - [React Documentation](https://react.dev/learn)
+- Installed Vite React/TypeScript to get the grid with boxes working.
 
 ---
 
