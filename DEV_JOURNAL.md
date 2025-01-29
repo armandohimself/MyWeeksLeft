@@ -27,7 +27,9 @@
 - Tried to compile using `npx tsc app.tsx` but got an error of: `app.tsx:1:8 - error TS1259: Module '"/Users/armandoarteaga/Github Repos/MyWeeksLeft/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag`
   - Added a `tsconfig.json` file with the `CompilerOptions` of `esModuleInterop` set to true.
   - esModuleInterop: true tells TypeScript to allow default imports from CommonJS modules, making imports more flexible.
-- Started over and I'm going to use Vite to install a fresh React App.
+- Started over and I'm going to use Vite to install a fresh React App. Used the commend `npm create vite@latest` to install a fresh app & ran `npm install`
+- [Vite Documentation](https://vite.dev/guide/)
+- [React Documentation](https://react.dev/learn)
 
 ---
 
