@@ -19,3 +19,17 @@
 - Because I don't have the TypeScript compiler installed on my machine I could not use `tsc app.ts` and instead had to use `npx tsc app.ts` in order to get my compiled code.
   - After I compiled I noticed my JavaScript code has the keyword `var` which is recognized in older browser versions.
 - `Union Types` are defined liked this: `let userId: string | number = "abc123";` and this is valid.
+
+# Day 2 Jan 29th, 2025 12:43 PM
+
+- Started on creating grid squares just to see if I can make them show up.
+- Installed `npm install react react-dom` & `npm install --save-dev @types/react@types/react-dom` so I could create the Grid and Square components.
+- Tried to compile using `npx tsc app.tsx` but got an error of: `app.tsx:1:8 - error TS1259: Module '"/Users/armandoarteaga/Github Repos/MyWeeksLeft/node_modules/@types/react/index"' can only be default-imported using the 'esModuleInterop' flag`
+  - Added a `tsconfig.json` file with the `CompilerOptions` of `esModuleInterop` set to true.
+  - esModuleInterop: true tells TypeScript to allow default imports from CommonJS modules, making imports more flexible.
+- Started over and I'm going to use Vite to install a fresh React App.
+
+---
+
+- Installed `npm install -D tailwindcss postcss autoprefixer
+  npx tailwindcss init
